@@ -1,0 +1,127 @@
+.red-heart1 {
+  -webkit-animation: 0.5s like-popoutin1 ease;
+          animation: 0.5s like-popoutin1 ease;
+}
+
+.red-heart {
+  -webkit-animation: 0.5s like-popoutin ease;
+          animation: 0.5s like-popoutin ease;
+}
+
+.cut {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+}
+
+.dislike {
+  color: black;
+  -webkit-animation: 0.5s dislike-popoutin ease;
+          animation: 0.5s dislike-popoutin ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+}
+
+@-webkit-keyframes like-popoutin {
+  0% {
+    color: red;
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    color: red;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes like-popoutin {
+  0% {
+    color: red;
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    color: red;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes like-popoutin1 {
+  0% {
+    color: red;
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    color: red;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes like-popoutin1 {
+  0% {
+    color: red;
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    color: red;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes dislike-popoutin {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes dislike-popoutin {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=CardBottom.css.map */
