@@ -10,38 +10,38 @@ $cardBoxShadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   width: 470px;
   max-height: 764px;
   background-color: white;
-  box-shadow: $cardBoxShadow;  
+  box-shadow: $cardBoxShadow;
 }
 .card-top {
-    display: flex;
-    height: 50px;
-    justify-content: stretch;
-    align-items: center;
-    box-shadow: $cardBoxShadow;
-  }
+  display: flex;
+  height: 50px;
+  justify-content: stretch;
+  align-items: center;
+  box-shadow: $cardBoxShadow;
+}
 .card-mid {
-    img {
-      width: 100%;
-      height: auto;
-    }
+  img {
+    width: 100%;
+    height: auto;
   }
+}
 .card-bott {
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
 
-    i {
-      padding-left: 10px;
-      padding-right: 5px;
-    }
+  i {
+    padding-left: 10px;
+    padding-right: 5px;
   }
+}
 .card-com {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex-grow: 1;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+}
 .add-com {
   justify-content: center;
   align-items: center;

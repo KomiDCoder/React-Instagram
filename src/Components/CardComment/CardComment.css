@@ -1,15 +1,15 @@
 .add-com-butt {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-    color: #0000ff3e;
-    pointer-events: none;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .clr--blue{
-    pointer-events:initial;
-    color:blue;
-    cursor: pointer;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #0000ff3e;
+  pointer-events: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.clr--blue {
+  pointer-events: initial;
+  color: blue;
+  cursor: pointer;
+}

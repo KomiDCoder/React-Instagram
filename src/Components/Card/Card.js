@@ -1,29 +1,14 @@
-import React , {useState,useEffect} from "react";
-import MainImage from "../mainImage";
+import React from "react";
+import MainImage from "../MainImage";
 import CardComment from "../CardComment/CardComment";
 import "./Card.css";
+
 function Card(props) {
-  let measure = Math.floor((window.innerWidth * 66) / 100)
-  const [pic,setPic]=useState({
-    class:""
-   })
-   
-  useEffect(()=>{
-    (async function fetchdata() {
-      fetch(`https://picsum.photos/${measure}`)
-        .then((res) => res.url)
-        .then((data) => {
-          setPic({
-            class:data
-          })
-        })
-        .catch((error) => {
-          console.error(error);
-        })
-     })()
- },[measure])
-  
- return (
+  const pic = `https://picsum.photos/400/?random&t=${String(
+    Math.random()
+  ).slice(10)}`;
+
+  return (
     <div className="card">
       <div className="card-main">
         <div className="card-top">

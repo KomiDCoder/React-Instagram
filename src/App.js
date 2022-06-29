@@ -4,15 +4,13 @@ import NavbarFooter from "./Components/NavbarFooter.js";
 import MainPart from "./Components/MainPart.js";
 import "./style/App.css";
 
-
-
 function App() {
   return (
-      <div className="instagram-website">
-        <InstaHeader />
-        <MainPart />
-        <NavbarFooter />
-      </div>
+    <div className="instagram-website">
+      <InstaHeader />
+      <MainPart />
+      <NavbarFooter />
+    </div>
   );
 }
 

@@ -1,5 +1,6 @@
+import React from "react";
 import DirectUsername from "./DirectUsername";
-import "../style/DirectPage.css";
+import "../../style/DirectPage.css";
 function DirectPage() {
   return (
     <div className="direct-page">

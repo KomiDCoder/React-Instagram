@@ -39,7 +39,7 @@ const CardComment = (props) => {
   return (
     <>
       <div className="card-com prl-16">
-        <CardCommentSection posts={comment.posts} data ={props.data}/>
+        <CardCommentSection posts={comment.posts} data={props.data} />
         <div className="add-com">
           <img
             src="./assets/happy-icon.png"
@@ -54,7 +54,10 @@ const CardComment = (props) => {
             username="user"
             value={buttonClass.message}
           />
-          <button className={`add-com-butt ${buttonClass.class}`} onClick={updateComment}>
+          <button
+            className={`add-com-butt ${buttonClass.class}`}
+            onClick={updateComment}
+          >
             Post
           </button>
         </div>

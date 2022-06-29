@@ -36,7 +36,7 @@ const MainImage = (props) => {
   return (
     <>
       <div className="img-container--animation">
-        <img src={props.imagePic.class} alt="Main-images" />
+        <img src={props.imagePic} alt="Main-images" />
         <div
           className={`pop-container ${dBClickliked.heartContainerClass}`}
           onDoubleClick={updateDBClicklike}

@@ -2,27 +2,28 @@
   position: relative;
 }
 
-.img-container--animation img{
+.img-container--animation img {
   border-radius: 2px;
   height: auto;
   width: 100%;
 }
 
 .pop-container {
+  max-width: 66vh;
   position: absolute;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 66vh;
   height: 66vh;
-  width: 100%;
   opacity: 1;
 }
-.pop-container--animation{
-  animation: 1.5s heart-bg-popoutin ease;
+.pop-container--animation {
+  animation: 1.2s heart-bg-popoutin ease;
 }
-.pop-container--animation1{
-  animation: 1.5s heart-bg-popoutin1 ease;
+.pop-container--animation1 {
+  animation: 1.15s heart-bg-popoutin1 ease;
 }
 @keyframes heart-bg-popoutin {
   0% {
@@ -57,42 +58,43 @@
   }
 }
 .pop-outin {
+  font-size: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   opacity: 0;
-  width: 10vh;
-  height: 10vh;
+  height: 99.5%;
+  width: 100%;
 }
-.pop-outin--animation{
-  animation: 1.5s heart-popoutin ease;
+.pop-outin--animation {
+  animation: 1.2s heart-popoutin ease;
 }
-.pop-outin--animation1{
-  animation: 1.5s heart-popoutin1 ease;
+.pop-outin--animation1 {
+  animation: 1.2s heart-popoutin1 ease;
 }
 
 @keyframes heart-popoutin {
   0% {
     color: grey;
-    transform: scale(0);
+    font-size: 2px;
     opacity: 0;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
   25% {
     color: grey;
-    transform: scale(20);
+    font-size: 200px;
     opacity: 1;
     text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
   }
   50% {
     color: grey;
-    transform: scale(10);
+    font-size: 100px;
     opacity: 1;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    transform: scale(10);
+    font-size: 100px;
     opacity: 0;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
   }
@@ -101,36 +103,37 @@
 @keyframes heart-popoutin1 {
   0% {
     color: grey;
-    transform: scale(0);
+    font-size: 2px;
     opacity: 0;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
   25% {
     color: grey;
-    transform: scale(20);
+    font-size: 200px;
     opacity: 1;
     text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
   }
   50% {
     color: grey;
-    transform: scale(10);
+    font-size: 100px;
     opacity: 1;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    transform: scale(10);
+    font-size: 100px;
     opacity: 0;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
   }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .pop-container {
+    max-width: 100%;
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 46.6vh;
+    height: 99.5%;
     width: 100%;
   }
 }

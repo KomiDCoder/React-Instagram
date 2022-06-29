@@ -1,12 +1,13 @@
-import "../style/DirectUsername.css";
+import React from "react";
+import "../../style/DirectUsername.css";
 function DirectUsername() {
   return (
     <div className="user-name">
       <div className="user-name--spacer"></div>
-      <a>
+      <button>
         mamalisaeedi
         <img src="./assets/arrowSwipe.png" alt="arrowSwipe" />
-      </a>
+      </button>
       <img
         src="./assets/newMessageDirect.png"
         alt="newMessageDirect"

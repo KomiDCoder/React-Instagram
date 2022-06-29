@@ -1,32 +1,32 @@
-.user-name{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    background-color: #ffffff;
-    justify-content: space-between;
-    width: 25vw;
-    height: 9vh;
-    align-items: center;
+.user-name {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  justify-content: space-between;
+  width: 25vw;
+  height: 9vh;
+  align-items: center;
 }
-.user-name--spacer{
-    flex-grow: 0.3;
+.user-name--spacer {
+  flex-grow: 0.3;
 }
 .user-name > a {
-    font-family: 'Anek Malayalam', sans-serif;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+  font-family: "Anek Malayalam", sans-serif;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 .direct-page__user-name > img {
-    flex-grow: 0;
+  flex-grow: 0;
 }
-.user-name__new-message-icon{
-    width: 40px;
-    height: 40px;
-    padding-right: 10px;
+.user-name__new-message-icon {
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
 }
