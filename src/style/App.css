@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap");
 
 body {
-  width: 100%;
+  width: 100vw;
   margin: 0;
+  overflow: hidden;
+  min-height: 100vh;
 }
 .instagram-website {
   display: flex;
@@ -17,6 +19,9 @@ body {
 
 .spacer {
   flex-grow: 1;
+}
+.spacer-half {
+  flex-grow: 0.5;
 }
 
 .pt-10 {

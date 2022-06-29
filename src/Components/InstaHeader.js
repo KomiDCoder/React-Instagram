@@ -12,11 +12,11 @@ function InstaHeader() {
           className="camera-pic pr-15 icon"
         />
         <img
-          src="./assets/instagram.png"
+          src="./assets/Instagram_logo.svg.png"
           alt="instagram-logo"
-          className="instaheader--instagram-pic logo"
+          className="instaheader--instagram-pic"
         />
-        <div className="instaheader--middle-spacer"></div>
+        <div className="spacer"></div>
         <form action="#" className="searchbar">
           <i className="lni lni-search-alt"></i>
           <input type="text" placeholder="Search.." name="search" />
@@ -28,6 +28,7 @@ function InstaHeader() {
           className="send-icon pr-15"
         />
         <div className="instaheader--spacer"></div>
+        <div className="spacer-half"></div>
       </div>
     </header>
   );

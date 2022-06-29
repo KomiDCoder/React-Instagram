@@ -64,14 +64,15 @@
 
 @media only screen and (max-width: 600px) {
   .card {
-    width: 97.2vw;
+    margin: 0;
+    width: 100;
     height: 100vh;
     max-width: 100vw;
-    margin: 0;
-    box-shadow: none;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   }
 
   .add-com {
     display: none;
   }
-}/*# sourceMappingURL=Card.css.map */
+} /*# sourceMappingURL=Card.css.map */

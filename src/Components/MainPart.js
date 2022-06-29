@@ -22,6 +22,7 @@ function MainPart() {
         {tests.map((test) => (
           <Card key={test} data={data} />
         ))}
+        <div className="main--spacer"></div>
       </div>
       <aside className="main-part__follow-suggestion">
         <li></li>
