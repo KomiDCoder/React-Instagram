@@ -12,22 +12,15 @@
 }
 
 .red-heart1 {
+  color: red;
   -webkit-animation: 0.5s like-popoutin1 ease;
           animation: 0.5s like-popoutin1 ease;
 }
 
 .red-heart {
+  color: red;
   -webkit-animation: 0.5s like-popoutin ease;
           animation: 0.5s like-popoutin ease;
-}
-
-.cut {
-  pointer-events: none;
-  box-sizing: content-box;
-  margin-right: 5px;
-  color: red;
-  text-align: center;
-  opacity: 1;
 }
 
 .dislike {

@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/Navbarcomponent.css";
 
 const Navbarcomponent = () => {
   const imgSet = [

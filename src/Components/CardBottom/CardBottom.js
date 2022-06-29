@@ -6,7 +6,7 @@ function CardBottom(props) {
 
   return (
     <div className="card-bott">
-      <button className="card--button" onClick={props.handleClick}>
+      <button onClick={props.handleClick} className="card--button">
         <i className={`cut lni lni-heart${heartIcon} ${redHeart}`}></i>
       </button>
       <img

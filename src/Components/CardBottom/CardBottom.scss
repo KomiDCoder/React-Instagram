@@ -11,19 +11,14 @@
   margin-left: 15px;
 }
 .red-heart1 {
+  color: red;
   animation: 0.5s like-popoutin1 ease;
 }
 .red-heart {
+  color: red;
   animation: 0.5s like-popoutin ease;
 }
-.cut {
-  pointer-events: none;
-  box-sizing: content-box;
-  margin-right: 5px;
-  color: red;
-  text-align: center;
-  opacity: 1;
-}
+
 .dislike {
   color: black;
   animation: 0.5s dislike-popoutin ease;
