@@ -1,13 +1,15 @@
 import React from "react";
 import "./CardBottom.css";
 function CardBottom(props) {
-  let redHeart = props.redHeart ? "red-heart" : "red-heart1";
-  let heartIcon = props.liked ? "-filled" : " dislike";
+  // let redHeart = props.redHeart ? "red-heart" : "red-heart1";
+  // let heartIcon = props.liked ? "-filled" : " dislike";
 
   return (
     <div className="card-bott">
       <button onClick={props.handleClick} className="card--button">
-        <i className={`cut lni lni-heart${heartIcon} ${redHeart}`}></i>
+        <i
+          className={`cut lni lni-heart${props.likeClass} ${props.redClass}`}
+        ></i>
       </button>
       <img
         src="./assets/comment-icon.png"

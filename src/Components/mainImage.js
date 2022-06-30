@@ -8,6 +8,8 @@ const MainImage = (props) => {
     heartContainerClass: "pop-container",
     isliked: false,
     redHeart: true,
+    likeClass: "",
+    redClass: "",
   });
 
   const updateDBClicklike = () => {
@@ -15,21 +17,44 @@ const MainImage = (props) => {
       return prevState === "--animation1" ? "--animation" : "--animation1";
     });
     setDBClickLiked((prevState) => {
-      return {
-        ...prevState,
-        isliked: true,
-        redHeart: !prevState.redHeart,
-        heartClass: `pop-outin${Animation}`,
-        heartContainerClass: `pop-container${Animation}`,
-      };
+      if (prevState.redHeart) {
+        return {
+          ...prevState,
+          isliked: true,
+          redHeart: !prevState.redHeart,
+          heartClass: `pop-outin${Animation}`,
+          heartContainerClass: `pop-container${Animation}`,
+          likeClass: "-filled",
+          redClass: "red-heart",
+        };
+      } else {
+        return {
+          ...prevState,
+          isliked: true,
+          redHeart: !prevState.redHeart,
+          heartClass: `pop-outin${Animation}`,
+          heartContainerClass: `pop-container${Animation}`,
+          likeClass: "-filled",
+          redClass: "red-heart1",
+        };
+      }
     });
   };
   const toggleLiked = () => {
     setDBClickLiked((prevState) => {
-      return {
-        ...prevState,
-        isliked: !prevState.isliked,
-      };
+      if (!prevState.isliked) {
+        return {
+          ...prevState,
+          isliked: !prevState.isliked,
+          likeClass: "-filled",
+        };
+      } else {
+        return {
+          ...prevState,
+          isliked: !prevState.isliked,
+          likeClass: " dislike",
+        };
+      }
     });
   };
 
@@ -50,6 +75,8 @@ const MainImage = (props) => {
         liked={dBClickliked.isliked}
         handleClick={toggleLiked}
         redHeart={dBClickliked.redHeart}
+        redClass={dBClickliked.redClass}
+        likeClass={dBClickliked.likeClass}
       />
     </>
   );

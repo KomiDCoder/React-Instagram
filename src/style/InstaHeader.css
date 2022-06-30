@@ -84,6 +84,11 @@ header nav.footer .explorer-icon {
 .instaheader--middle-spacer {
   flex-grow: 1;
 }
+@media only screen and (max-width: 1300px) {
+  .instaheader--spacer {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 850px) {
   header nav.footer {
@@ -98,9 +103,6 @@ header nav.footer .explorer-icon {
 }
 
 @media only screen and (max-width: 600px) {
-  .instaheader--spacer {
-    display: none;
-  }
   .instaheader__container {
     display: flex;
     justify-content: space-between;
