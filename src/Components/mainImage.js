@@ -72,9 +72,7 @@ const MainImage = (props) => {
         </div>
       </div>
       <CardBottom
-        liked={dBClickliked.isliked}
         handleClick={toggleLiked}
-        redHeart={dBClickliked.redHeart}
         redClass={dBClickliked.redClass}
         likeClass={dBClickliked.likeClass}
       />
