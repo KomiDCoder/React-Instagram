@@ -1,10 +1,10 @@
 import React from "react";
-import MainImage from "../MainImage";
+import MainImage from "../MainImage/MainImage";
 import CardComment from "../CardComment/CardComment";
 import "./Card.css";
 
 function Card(props) {
-  const pic = `https://picsum.photos/400/?random&t=${String(
+  const pic = `https://picsum.photos/470/?random&t=${String(
     Math.random()
   ).slice(10)}`;
 

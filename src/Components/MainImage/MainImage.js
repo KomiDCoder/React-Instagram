@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CardBottom from "./CardBottom/CardBottom";
-import "../style/MainImage.css";
+import CardBottom from "../CardBottom/CardBottom";
+import "./MainImage.css";
 const MainImage = (props) => {
   const [Animation, setAnimation] = useState("--animation");
   const [dBClickliked, setDBClickLiked] = useState({
@@ -61,10 +61,12 @@ const MainImage = (props) => {
   return (
     <>
       <div className="img-container--animation">
-        <img src={props.imagePic} alt="Main-images" />
+        <img src={props.imagePic}
+          alt={`random ${String(Math.random()).split(".")[1]}`}
+        />
         <div
-          className={`pop-container ${dBClickliked.heartContainerClass}`}
           onDoubleClick={updateDBClicklike}
+          className={`pop-container ${dBClickliked.heartContainerClass}`}
         >
           <div className={`pop-outin ${dBClickliked.heartClass}`}>
             <i className="lni lni-heart-filled"></i>

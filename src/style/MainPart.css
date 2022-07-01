@@ -1,21 +1,11 @@
 main {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   overflow-y: auto;
   justify-content: center;
   align-items: stretch;
-  padding: 0;
-  width: 100vw;
-  height: 90vh;
   background-color: transparent;
-  padding-right: 40px;
-}
-.main-part__post {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-  justify-content: stretch;
-  align-items: stretch;
 }
 .main--spacer {
   width: 100%;
@@ -23,13 +13,12 @@ main {
   flex-shrink: 0;
 }
 .main-part__follow-suggestion {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
   margin-left: 30px;
-  width: 319px;
+  width: 320px;
   height: 360px;
   border: 1px solid red;
 }
@@ -43,9 +32,7 @@ main {
 @media only screen and (max-width: 600px) {
   main {
     width: 100vw;
-    height: 90vh;
     border-radius: 10px;
-    padding-right: 30px;
   }
   .main--spacer {
     width: 100%;

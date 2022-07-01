@@ -2,22 +2,22 @@
   position: relative;
 }
 
-.img-container--animation img {
+.img-container--animation > img {
+  display: block;
   border-radius: 2px;
   height: auto;
   width: 100%;
 }
 
 .pop-container {
-  max-width: 66vh;
   position: absolute;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 66vh;
-  height: 66vh;
   opacity: 1;
+  height: 100%;
+  width: 100%;
 }
 .pop-container--animation {
   animation: 1.2s heart-bg-popoutin ease;
@@ -64,7 +64,7 @@
   align-items: center;
   text-align: center;
   opacity: 0;
-  height: 99.5%;
+  height: 100%;
   width: 100%;
 }
 .pop-outin--animation {
