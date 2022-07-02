@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Card/Card";
-import "../style/MainPart.css";
+import Card from "../Card/Card";
+import "./MainPart.css";
 function MainPart() {
   const [data, setData] = useState("");
 

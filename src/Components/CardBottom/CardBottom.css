@@ -1,32 +1,44 @@
-.card--button {
+.card-image-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.card-image-bottom:last-child {
+  margin-right: 10px;
+}
+.card-image-bottom--left-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 120px;
+}
+
+.card-image-bottom--button {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
-  height: 24px;
-  width: 24px;
   font-size: 24px;
-  margin-right: 5px;
-  margin-left: 15px;
 }
 
 .red-heart1 {
   color: red;
   -webkit-animation: 0.5s like-popoutin1 ease;
-          animation: 0.5s like-popoutin1 ease;
+  animation: 0.5s like-popoutin1 ease;
 }
 
 .red-heart {
   color: red;
   -webkit-animation: 0.5s like-popoutin ease;
-          animation: 0.5s like-popoutin ease;
+  animation: 0.5s like-popoutin ease;
 }
 
 .dislike {
   color: black;
   -webkit-animation: 0.5s dislike-popoutin ease;
-          animation: 0.5s dislike-popoutin ease;
+  animation: 0.5s dislike-popoutin ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,4 +142,4 @@
     transform: scale(1);
     opacity: 1;
   }
-}/*# sourceMappingURL=CardBottom.css.map */
+}

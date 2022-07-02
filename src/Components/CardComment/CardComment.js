@@ -38,28 +38,30 @@ const CardComment = (props) => {
   };
   return (
     <>
-      <div className="card-com prl-16">
+      <div className="card-com">
         <CardCommentSection posts={comment.posts} data={props.data} />
-        <div className="add-com">
-          <img
-            src="./assets/happy-icon.png"
-            alt="happy-icon"
-            className="p-10 icon"
-          />
-          <input
-            type="text"
-            placeholder="Add a comment..."
-            className="com-input"
-            onChange={updateButtonColor}
-            username="user"
-            value={buttonClass.message}
-          />
-          <button
-            className={`add-com-butt ${buttonClass.class}`}
-            onClick={updateComment}
-          >
-            Post
-          </button>
+        <div className="add-comm">
+          <form className="comm-form">
+            <img
+              src="./assets/happy-icon.png"
+              alt="happy-icon"
+              className="icon"
+            />
+            <input
+              type="text"
+              placeholder="Add a comment..."
+              className="com-input"
+              onChange={updateButtonColor}
+              username="user"
+              value={buttonClass.message}
+            />
+            <button
+              className={`add-com-butt ${buttonClass.class}`}
+              onClick={updateComment}
+            >
+              Post
+            </button>
+          </form>
         </div>
       </div>
     </>

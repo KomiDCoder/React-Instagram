@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap");
+
+body {
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.instagram-website {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}

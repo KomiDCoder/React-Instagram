@@ -1,37 +1,36 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: stretch;
   margin: 0;
   padding: 0;
-  flex-shrink: 0;
-  height: 60px;
+  height: 55px;
   border-bottom: 1px solid rgba(219, 219, 219, 1);
   background-color: #ffffff;
-  width: 100vw;
+  width: 100%;
 }
 
 .instaheader__container {
-  padding-left: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+}
+
+.instagram-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20px;
 }
 
 header nav.footer {
+  box-shadow: none;
   position: relative;
   display: flex;
-  width: 10vw;
+  max-width: 350px;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: none;
-  padding-left: 130px;
-}
-
-header nav.footer img {
-  padding: 0px 10px 0px 10px;
 }
 
 header nav.footer .explorer-icon {
@@ -44,7 +43,6 @@ header nav.footer .explorer-icon {
   font-size: 17px;
   border: none;
   outline: none;
-  border-radius: 20px;
 }
 
 .searchbar {
@@ -53,7 +51,6 @@ header nav.footer .explorer-icon {
   flex-direction: row;
   text-align: center;
   background-color: #efefef;
-  font-family: RobotoThin;
   border-radius: 5px;
   color: #cbcbcb;
 }
@@ -63,37 +60,23 @@ header nav.footer .explorer-icon {
 .send-icon {
   display: none;
 }
-.instaheader--spacer {
-  flex-grow: 1;
-}
 
 .camera-pic {
   display: none;
 }
+
 .instaheader--instagram-pic {
-  padding-top: 3px;
-  height: 5.5vh;
-  width: 15.3vh;
-  padding-left: 32px;
-}
-.icon {
-  width: 24px;
-  height: 24px;
+  height: 40px;
+  width: auto;
 }
 
-.instaheader--middle-spacer {
-  flex-grow: 1;
-}
 @media only screen and (max-width: 1300px) {
-  .instaheader--spacer {
-    display: none;
+  .instaheader__container {
+    justify-content: space-between;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  header nav.footer {
-    padding-right: 30px;
-  }
   .instaheader--spacer {
     display: none;
   }
@@ -104,28 +87,24 @@ header nav.footer .explorer-icon {
 
 @media only screen and (max-width: 600px) {
   .instaheader__container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .instagram-logo {
+    margin-left: 8px;
   }
   header nav.footer {
     display: none;
   }
   .send-icon {
     display: block;
-  }
-  .desktop--spacer {
-    display: none;
+    margin-right: 10px;
   }
   .camera-pic {
     display: block;
   }
   .instaheader--instagram-pic {
-    height: 5.5vh;
-    width: 16vh;
-    padding-left: 0px;
-  }
-  .instaheader__container .spacer-half {
-    display: none;
+    height: 40px;
+    width: auto;
   }
 }

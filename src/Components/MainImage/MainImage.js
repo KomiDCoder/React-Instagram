@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import CardBottom from "./CardBottom/CardBottom";
-import "../style/MainImage.css";
+import CardBottom from "../CardBottom/CardBottom";
+import "./MainImage.css";
 const MainImage = (props) => {
   const [Animation, setAnimation] = useState("--animation");
   const [dBClickliked, setDBClickLiked] = useState({
     heartClass: "pop-outin",
-    heartContainerClass: "pop-container",
     isliked: false,
     redHeart: true,
     likeClass: "",
@@ -23,7 +22,6 @@ const MainImage = (props) => {
           isliked: true,
           redHeart: !prevState.redHeart,
           heartClass: `pop-outin${Animation}`,
-          heartContainerClass: `pop-container${Animation}`,
           likeClass: "-filled",
           redClass: "red-heart",
         };
@@ -33,7 +31,6 @@ const MainImage = (props) => {
           isliked: true,
           redHeart: !prevState.redHeart,
           heartClass: `pop-outin${Animation}`,
-          heartContainerClass: `pop-container${Animation}`,
           likeClass: "-filled",
           redClass: "red-heart1",
         };
@@ -46,7 +43,7 @@ const MainImage = (props) => {
         return {
           ...prevState,
           isliked: !prevState.isliked,
-          likeClass: "-filled",
+          likeClass: "-filled red-heart",
         };
       } else {
         return {
@@ -60,16 +57,13 @@ const MainImage = (props) => {
 
   return (
     <>
-      <div className="img-container--animation">
+      <div className="img-container-animation">
         <img src={props.imagePic} alt="Main-images" />
-        <div
-          className={`pop-container ${dBClickliked.heartContainerClass}`}
-          onDoubleClick={updateDBClicklike}
-        >
+        <button className="pop-container" onDoubleClick={updateDBClicklike}>
           <div className={`pop-outin ${dBClickliked.heartClass}`}>
             <i className="lni lni-heart-filled"></i>
           </div>
-        </div>
+        </button>
       </div>
       <CardBottom
         handleClick={toggleLiked}

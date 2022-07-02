@@ -1,4 +1,35 @@
+.card-com {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-comm {
+  width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.214);
+}
+.comm-form {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.com-input {
+  margin-left: 15px;
+  font-size: 95%;
+  flex-grow: 1;
+  border: none;
+}
+.com-input:focus {
+  outline: none;
+}
+
 .add-com-butt {
+  background-color: transparent;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,10 +37,8 @@
   color: #0000ff3e;
   pointer-events: none;
   text-decoration: none;
-  cursor: pointer;
 }
 .clr--blue {
   pointer-events: initial;
   color: blue;
-  cursor: pointer;
 }

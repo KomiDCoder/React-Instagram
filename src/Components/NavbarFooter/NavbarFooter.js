@@ -1,8 +1,8 @@
 import React from "react";
-import "../style/NavbarFooter.css";
+import "./NavbarFooter.css";
 function NavbarFooter() {
   return (
-    <nav className="footer p-10 crm-clr">
+    <nav className="footer">
       <img src="./assets/home-icon.png" alt="home-icon" className="icon" />
       <img src="./assets/search-icon.png" alt="search-icon" className="icon" />
       <img src="./assets/New-post.png" alt="New-post.png" className="icon" />
