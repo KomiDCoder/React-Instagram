@@ -59,20 +59,21 @@ const MainImage = (props) => {
   return (
     <>
       <div className="img-container-animation">
-        <div className="image-container">
+        <div className="image-container-box">
           {props.imagePics.map((item, i) => {
-            if (i < 1) {
-              return (
-                <img
-                  src={item}
-                  alt="Main-images"
-                  key={i}
-                  className="hidden-image"
-                />
-              );
-            } else {
-              return <img src={item} alt="Main-images" key={i} />;
-            }
+            return (
+              <div key={i} className="image-container">
+                <img src={item} alt="Main-images" />
+                <button
+                  className="pop-container"
+                  onDoubleClick={updateDBClicklike}
+                >
+                  <div className={`pop-outin ${dBClickliked.heartClass}`}>
+                    <i className="lni lni-heart-filled"></i>
+                  </div>
+                </button>
+              </div>
+            );
           })}
         </div>
         <button className="pop-container" onDoubleClick={updateDBClicklike}>
