@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CardBottom from "../CardBottom/CardBottom";
+import ImageCarousel from "../ImageCarousel/ImageCarousel";
 import "./MainImage.css";
 const MainImage = (props) => {
   const [Animation, setAnimation] = useState("--animation");
@@ -58,12 +59,28 @@ const MainImage = (props) => {
   return (
     <>
       <div className="img-container-animation">
-        <img src={props.imagePic} alt="Main-images" />
+        <div className="image-container">
+          {props.imagePics.map((item, i) => {
+            if (i < 1) {
+              return (
+                <img
+                  src={item}
+                  alt="Main-images"
+                  key={i}
+                  className="hidden-image"
+                />
+              );
+            } else {
+              return <img src={item} alt="Main-images" key={i} />;
+            }
+          })}
+        </div>
         <button className="pop-container" onDoubleClick={updateDBClicklike}>
           <div className={`pop-outin ${dBClickliked.heartClass}`}>
             <i className="lni lni-heart-filled"></i>
           </div>
         </button>
+        <ImageCarousel />
       </div>
       <CardBottom
         handleClick={toggleLiked}

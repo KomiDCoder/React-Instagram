@@ -4,10 +4,12 @@ import CardComment from "../CardComment/CardComment";
 import "./Card.css";
 
 function Card(props) {
-  const pic = `https://picsum.photos/400/?random&t=${String(
-    Math.random()
-  ).slice(10)}`;
-
+  const album = Array(4)
+    .fill()
+    .map(
+      () =>
+        `https://picsum.photos/400/?random&t=${String(Math.random()).slice(10)}`
+    );
   return (
     <div className="card">
       <div className="card-main">
@@ -26,7 +28,7 @@ function Card(props) {
             className="card-top-three-dot icon"
           />
         </div>
-        <MainImage imagePic={pic} />
+        <MainImage imagePics={album} />
       </div>
       <CardComment data={props.data} />
     </div>

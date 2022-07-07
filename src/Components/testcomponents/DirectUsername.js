@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/DirectUsername.css";
 function DirectUsername() {
   return (
     <div className="user-name">
