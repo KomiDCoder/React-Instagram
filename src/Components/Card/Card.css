@@ -4,8 +4,8 @@
   justify-content: stretch;
   margin-bottom: 6px;
   border-radius: 10px;
-  max-width: 470px;
-  width: 470px;
+  max-width: 478px;
+  width: 478px;
   max-height: 764px;
   background-color: white;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -28,7 +28,7 @@
   margin-right: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .card {
     width: 100%;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);

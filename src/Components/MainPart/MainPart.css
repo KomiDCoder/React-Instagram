@@ -29,13 +29,13 @@ main::-webkit-scrollbar {
   border: 1px solid red;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .main-part__follow-suggestion {
     display: none;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   main {
     flex-direction: column;
     justify-content: stretch;
@@ -43,6 +43,6 @@ main::-webkit-scrollbar {
   }
   .main-part__post {
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
   }
 }

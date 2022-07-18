@@ -4,9 +4,10 @@
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
-/* .img-container-animation::-webkit-scrollbar {
+.img-container-animation::-webkit-scrollbar {
   width: 1px;
-} */
+  height: 0;
+}
 .image-container {
   display: flex;
   flex-shrink: 0;
@@ -41,7 +42,6 @@
   height: 100%;
   top: 0;
   opacity: 1;
-  /* z-index: 20; */
 }
 
 .pop-outin {
@@ -113,12 +113,45 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .pop-container {
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.Image-Carousel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.left-swipe,
+.right-swipe {
+  display: flex;
+  color: black;
+  font-size: 1.5rem;
+  pointer-events: initial;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.556);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.left-swipe {
+  margin-left: 20px;
+}
+.right-swipe {
+  margin-right: 20px;
+}
+.show {
+  display: flex;
+}
+@media only screen and (max-width: 468px) {
+  /* .Image-Carousel {
+    display: none;
+  } */
+  /* .img-container-animation::-webkit-scrollbar {
+    height: initial;
+    width: initial;
+  } */
 }
